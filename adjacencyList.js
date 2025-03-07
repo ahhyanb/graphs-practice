@@ -31,5 +31,13 @@ class AdjacencyList {
     }
   }
 
+  const graph = new AdjacencyList();
 
+  graph.addVertex(1); // { 1: [] }
+  graph.addVertex(2); // { 1: [], 2: [] }
+  graph.addVertex(1); // No change, since 1 already exists
+
+  graph.addEdge(1, 2);
   
+  console.log(graph.adjacencyList); 
+  // Output: { 1: [], 2: [] }
