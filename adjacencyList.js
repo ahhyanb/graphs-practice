@@ -39,5 +39,5 @@ class AdjacencyList {
 
   graph.addEdge(1, 2);
   
-  console.log(graph.adjacencyList); 
+  console.log(graph); 
   // Output: { 1: [], 2: [] }
