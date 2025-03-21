@@ -53,7 +53,7 @@
 
 
 
-function threeSome(nums) {
+function threeSum(nums) {
 
     nums.sort((a,b) => a - b);
 
@@ -89,3 +89,18 @@ function threeSome(nums) {
     return result;
 
 }
+
+console.log(threeSum([1, 0, -1, -2]));
+
+console.log(threeSum([-1, 0, 1, 2, -1, -4]));  
+// ✅ Output: [[-1, -1, 2], [-1, 0, 1]]
+
+console.log(threeSum([0, 1, 1]));  
+// ✅ Output: [] (no valid triplets)
+
+console.log(threeSum([0, 0, 0, 0]));  
+// ✅ Output: [[0, 0, 0]] (only one unique triplet)
+
+console.log(threeSum([-2, 0, 1, 1, 2]));  
+// ✅ Output: [[-2, 0, 2], [-2, 1, 1]]
+
